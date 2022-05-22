@@ -1,0 +1,3 @@
+/home/napt/Documents/Jhonny/CMakeFiles/app.dir
+/home/napt/Documents/Jhonny/CMakeFiles/edit_cache.dir
+/home/napt/Documents/Jhonny/CMakeFiles/rebuild_cache.dir

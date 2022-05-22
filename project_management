@@ -1,0 +1,16 @@
+Projeto Jhonny
+
+As partes do projeto são:
+        1-Classe para conectar com o drive e fazer operações de controle de movimento.
+        2-Classe para gerênciar leitura de arquivos onde ficarão guardadas as "coordenadas de movimento"
+        3-Classe para gerênciar GPIO
+        4-Classe para harmonizar o GTK com o programa renderizado de fato, inclusive tendo um controle fino das threaads de
+        motion control e UI.
+
+O que falta estudar:
+
+        1-Como trocar telas no GTK
+        2-Como lidar com multithreads no C puro
+        3-Como lidar com tempo no C puro
+        4-Listagem completa de parâmetros do drive
+        5-Heap vs Stack
