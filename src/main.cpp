@@ -27,6 +27,13 @@ uint16_t reg[5];// will store read registers values
 
 //Read 5 holding registers starting from address 10
 int num = modbus_read_registers(ctx,0x300,1, reg);
+int result;
+
+
+result=modbus_write_register(ctx,0x30c,0x3f01);
+printf("----------------------------------------->%d\n",result);
+
+
 
 if (num !=1) {// number of read registers is not the one expected
     std::cout<<"ERRO------->"<<modbus_strerror(errno)<<std::endl;
