@@ -74,7 +74,7 @@
             <signal name="released" handler="parar" swapped="no"/>
           </object>
           <packing>
-            <property name="x">565</property>
+            <property name="x">560</property>
             <property name="y">374</property>
           </packing>
         </child>

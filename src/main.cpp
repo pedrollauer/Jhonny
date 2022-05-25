@@ -30,7 +30,6 @@ int num = modbus_read_registers(ctx,0x300,1, reg);
 int result;
 
 
-result=modbus_write_register(ctx,0x30c,0x3f01);
 printf("----------------------------------------->%d\n",result);
 
 
@@ -41,6 +40,16 @@ if (num !=1) {// number of read registers is not the one expected
 
 std::cout<<"MITO---->"<<reg[0]<<std::endl;
 
+
+while(true){
+
+num = modbus_read_registers(ctx,0x0012,1, reg);
+result=modbus_write_register(ctx,0x40e,0x3f00);
+std::cout<<"Velocidade--------->"<<reg[0]<<std::endl;
+num = modbus_read_registers(ctx,0x40e,1, reg);
+std::cout<<"STATUS--------->"<<num<<std::endl;
+
+}
 modbus_close(ctx);
 modbus_free(ctx);
 }
